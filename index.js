@@ -4,7 +4,6 @@ const fs = require("fs").promises;
 const port = 8080;
 
 const server = http.createServer((req, res) => {
-  console.log(req.url);
   let file;
   switch (req.url) {
     case "/":
